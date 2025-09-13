@@ -1,9 +1,85 @@
  :root{
     --main-color: #F2E85C;
  }
+ *{
+    box-sizing: border-box;
+ }
  body{
      font-family: "Open Sans", sans-serif;
  }
+  /* setting box styles */
+ .setting-box{
+    position: fixed;
+    top: 200px;
+    left: -200px;
+    z-index: 1000;
+    background-color: #fff;
+    width: 200px;
+    /* min-height: 100vh; */
+    transition: .5s;
+ }
+ .setting-box .toggle-setting{
+    position: absolute;
+    top: 45px;
+    right: -30px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+ }
+  .switch-setting-box{
+    left: 0;
+    transition: .5s;
+  }
+ .setting-box .toggle-setting i{
+    width: 30px;
+    padding: 8px 0;
+ }
+ .setting-box .setting-content{
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+
+ }
+ .setting-box .setting-content h4{
+    font-size: 20px;
+    margin: 0;
+ }
+ .setting-box  .colors-list{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    gap: 10px;
+ }
+    .setting-box  .colors-list li{
+        width: 24px;
+        height: 24px;
+        opacity: .5;
+        cursor: pointer;
+    }
+ .setting-box  .colors-list li:first-child{
+    background-color: #F2E85C;
+ }
+ .setting-box  .colors-list li:nth-child(2){
+    background-color: #e91e63;
+}
+ .setting-box  .colors-list li:nth-child(3){
+    background-color: #03a9f4;
+ }
+ .setting-box  .colors-list li:nth-child(4){
+    background-color: #4caf50;
+ }
+ .setting-box  .colors-list li:nth-child(5){
+    background-color: #ff5722;
+ }
+ .setting-box  .colors-list .active{
+    opacity: 1 !important;
+    border: 2px solid #005c54;
+    width: 28px;
+    height: 28px;
+ }
+
+ /* end setting box styles */
  /* style for landing page */
  .landing-page{
     min-height: 100vh;
