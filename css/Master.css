@@ -10,7 +10,7 @@
   /* setting box styles */
  .setting-box{
     position: fixed;
-    top: 200px;
+    top: 100px;
     left: -200px;
     z-index: 1000;
     background-color: #fff;
@@ -20,7 +20,7 @@
  }
  .setting-box .toggle-setting{
     position: absolute;
-    top: 45px;
+    top: 100px;
     right: -30px;
     text-align: center;
     background-color: #ffffff;
@@ -73,11 +73,37 @@
     background-color: #ff5722;
  }
  .setting-box  .colors-list .active{
-    opacity: 1 !important;
+    opacity: 1;
     border: 2px solid #005c54;
     width: 28px;
     height: 28px;
  }
+.setting-box .option-content{
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 10px;
+}
+.setting-box .option-content h4{
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+.setting-box .option-content span{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #009688;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: .5;
+}
+.setting-box .option-content .active{
+    opacity: 1;
+}
+
 
  /* end setting box styles */
  /* style for landing page */
