@@ -7,6 +7,13 @@
  body{
      font-family: "Open Sans", sans-serif;
  }
+ .container{
+    width: 1170px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+
   /* setting box styles */
  .setting-box{
     position: fixed;
@@ -174,3 +181,190 @@
     margin: 0;
 }
 /* end landing page */
+/* start about section */
+.about{
+    padding: 50px 0;
+    display: flex;
+}
+.about .info-box{
+    flex: 1;
+    padding: 0 30px;
+}
+.about .info-box h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0;
+    color: var(--main-color);
+}
+.about .info-box p{
+    font-size: 18px;
+    color:#565c66;
+    line-height: 1.8;
+    margin: 0;
+}
+.about .image-box{
+    flex: 1;
+    text-align: center;
+}
+.about .image-box img{
+    width: 350px;
+}
+/* end about section */
+/* start skills section */
+.skills{
+    padding: 50px 0;
+    background-color: #eee;
+}
+.skills h2{
+    text-align: center;
+    margin: 0px 0 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.skill-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 20px;
+
+}
+.skill-box h4{
+    margin: 0;
+    font-size: 20px;
+    width: 125px;
+    text-align: center;
+    line-height: 30px;
+}
+.skill-progress{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #eceaea;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.skill-progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-color);
+    transition: all .6s;
+}
+/* start gallery */
+.gallery{
+    padding: 50px 0;
+}
+.gallery h2{
+    text-align: center;
+    margin: 0px 0 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.gallery .gallery-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.gallery .gallery-items .gallery-item{
+    position: relative;
+}
+.gallery .gallery-items .gallery-item .gallery-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.gallery .gallery-items img{
+    width: 200px;
+    height: 150px;
+    padding: 3px;
+    background-color: hsl(0, 100%, 97%);
+    border: 1px solid #e4dcdc;
+}
+.overlay-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 10000;
+}
+.popup-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 10px;
+    z-index: 10001;
+}
+.popup-box img{
+    max-width: 100%;
+}
+.popup-box .close-popup{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: var(--main-color);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.popup-box .close-popup:hover{
+    background-color: red;
+}
+.popup-box .prev-popup{
+position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popup-box .next-popup{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popup-box .prev-popup:hover,
+.popup-box .next-popup:hover{
+    color: #ffffff;
+    background-color: var(--main-color);
+}
