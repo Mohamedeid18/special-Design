@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- start button scroll to top -->
+    <button class="scroll-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!-- end button scroll to top -->
     <!-- start setting box -->
      <div class="setting-box">
         <div class="toggle-setting">
@@ -20,7 +25,7 @@
         <div class="setting-content">
             <h4>Colors</h4>
             <ul class="colors-list">
-                <li class="color-option active" data-color="#F2E85C"></li>
+                <li class="color-option active" data-color="#FFC107"></li>
                 <li class="color-option active" data-color="#e91e63"></li>
                 <li class="color-option active" data-color="#03a9f4"></li>
                 <li class="color-option active" data-color="#4caf50"></li>
@@ -32,8 +37,35 @@
             <span class="yes active" data-background="Yes">Yes</span>
             <span class="no" data-background="No">No</span>
         </div>
+        <div class="bullets-option">
+            <h4>Show Bullets</h4>
+            <span class="yes active" data-display="show">Yes</span>
+            <span class="no" data-display="hide">No</span>
+        </div>
      </div>
     <!-- End setting box -->
+    <!-- start Navigation -->
+     <div class="nav-bullets">
+        <div class="bullet" data-section=".about">
+            <div class="tooltip">About</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip">Skills</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">Gallery</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">Testimonials</div>
+        </div>
+     </div>
+    <!-- end Navigation -->
     <!-- start landing page -->
     <div class="landing-page">
         <div class="overlay"></div>
@@ -41,10 +73,12 @@
         <div class="landing-area">
             <div class="logo">Special Design</div>
             <ul class="links">
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="active" data-section=".about">About</a></li>
+                <li><a href="#" data-section=".skills">Skills</a></li>
+                <li><a href="#" data-section=".gallery">Gallery</a></li>
+                <li><a href="#" data-section=".timeline">Timeline</a></li>
+                <li><a href="#" data-section=".features">Features</a></li>
+                <li><a href="#" data-section=".testimonials">Testimonials</a></li>
             </ul>
         </div>
         <div class="introduction-text">
@@ -152,7 +186,118 @@
         </div>
     </div>
     <!-- end gallery -->
+    <!-- start timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2024</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Founded Special Design</h3>
+                        <p>Special Design was founded with a vision to provide top-notch design services that cater to diverse client needs.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h3>First Major Project</h3>
+                        <p>We successfully completed our first major project, delivering exceptional design solutions that exceeded client expectations.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">2025</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Expanded Services</h3>
+                        <p>We expanded our service offerings to include web design, branding, and digital marketing, catering to a broader range of client needs.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Award Recognition</h3>
+                        <p>Special Design received industry recognition for our innovative design solutions and commitment to excellence.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end timeline -->
+    <!-- start features -->
+    <div class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature-box">
+                <img src="image/Icon_01.png" alt="">
+                <h4>Creative Designs</h4>
+                <p>We specialize in creating unique and innovative designs that captivate and inspire.</p>
+            </div>
+            <div class="feature-box">
+                <img src="image/Icon_02.png" alt="">
+                <h4>Targeted Solutions</h4>
+                <p>Our designs are tailored to meet the specific needs and goals of our clients.</p>
+            </div>
+            <div class="feature-box">
+                <img src="image/Icon_03.png" alt="">
+                <h4>Timely Delivery</h4>
+                <p>We prioritize timely delivery without compromising on quality, ensuring client satisfaction.</p>
+            </div>
+            <div class="feature-box">
+                <img src="image/Icon_04.png" alt="">
+                <h4>Customer Satisfaction</h4>
+                <p>Our commitment to excellence ensures that our clients are always satisfied with our work.</p>
+            </div>
+            <div class="feature-box">
+                <img src="image/Icon_05.png" alt="">
+                <h4>Expert Team</h4>
+                <p>Our team of experienced designers is dedicated to delivering exceptional design solutions.</p>
+            </div>
+            <div class="feature-box">
+                <img src="image/Icon_06.png" alt="">
+                <h4>Affordable Pricing</h4>
+                <p>We offer competitive pricing without compromising on quality, making top-notch design accessible.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end features -->
+    <!-- start testimonials -->
+    <div class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials-content">
+                <div class="testimonial-box">
+                    <p>"Special Design transformed our brand with their innovative approach and attention to detail."</p>
+                    <div class="client-info">
+                        <img src="https://placehold.co/70" alt="">
+                        <div class="client-text">
+                            <h4>Client Name</h4>
+                            <p>CEO, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p>"The team at Special Design is highly skilled and dedicated to delivering outstanding results."</p>
+                    <div class="client-info">
+                        <img src="https://placehold.co/70" alt="">
+                        <div class="client-text">
+                            <h4>Client Name</h4>
+                            <p>Founder, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-box">
+                    <p>"We were impressed with their ability to understand our needs and deliver a tailored solution."</p>
+                    <div class="client-info">
+                        <img src="https://placehold.co/70" alt="">
+                        <div class="client-text">
+                            <h4>Client Name</h4>
+                            <p> Manager, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end testimonials -->
+
 
     <script src="js/Master.js"></script>
-</body>
-</html>
